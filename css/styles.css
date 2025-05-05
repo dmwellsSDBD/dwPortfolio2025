@@ -22,8 +22,13 @@ html {
     box-sizing: inherit;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #f6f6f6;
+    margin: 0;
 }
 
 /* links */
@@ -36,18 +41,24 @@ a:hover {
     text-decoration: none;
 }
 
+.btn {
+    background:#3c8453;
+    color:#f6f6f6;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
 footer a {
     color: #bcaa96;
 }
 
 footer a:hover {
     color: #3c8453;
-}
-
-.btn {
-    background:#3c8453;
-    color:#f6f6f6;
-    text-decoration: none;
 }
 
 /* HOME
@@ -66,7 +77,10 @@ footer a:hover {
 
 /* RESUME
 --------------------------------------------------*/
-
+.resume heade::before {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    content: "Hello";
+}
 
 /* Profile
 --------------------------------------------------*/
