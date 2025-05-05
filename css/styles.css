@@ -67,11 +67,17 @@ footer a:hover {
 .home {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
-    background-color: rgb(255 255 255 / 0.9);
     /* background-color: #ffffff09; */
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background-color: rgb(255 255 255 / 0.9);
 }
 
 
