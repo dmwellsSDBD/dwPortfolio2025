@@ -128,6 +128,16 @@ footer a:hover {
     padding: 30px;
 }
 
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 10px
+    }
+
+    .content-bg {
+        padding: 20px;
+    }
+}
+
 
 /* RESUME
 --------------------------------------------------*/
@@ -262,9 +272,6 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
 }
 
 .socials {
@@ -283,4 +290,19 @@ footer {
 
 .socials img:hover {
     opacity: 0.5;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
