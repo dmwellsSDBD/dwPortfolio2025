@@ -1,11 +1,11 @@
 /*
-COLOR PALETTE
+ORIGINAL COLOR PALETTE              NEW COLOR PALETTE FOR DW PORTFOLIO
 
-Dark green  #3c8453
-Sandy beige #bcaa96
-Dark gray   #222222
-Light gray  #d3d4d6
-Off-white   #f6f6f6
+Dark green  #3c8453                 Honolulu Blue       #2c7caf
+Sandy beige #bcaa96                 Columbia Blue       #bed6f6
+Dark gray   #222222                 Baby Powder         #f8f7f3
+Light gray  #d3d4d6                 Champagne           #F5E3CC
+Off-white   #f6f6f6                 Earth Yellow        #e5b678
 
 SITE FONTS
 Caveat
@@ -46,7 +46,7 @@ html, body {
 }
 
 body {
-    background: #f6f6f6;
+    background: #f8f7f3;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -66,25 +66,27 @@ h1 {
 
 h2 {
     font-size: 3.6rem;
+    color:#e5b678;
 }
 
 h3 {
     font-size: 2.4rem;
+    color:#2c7caf;
 }
 
 /* links */
 a {
-    color: #3c8453;
+    color: #2c7caf;
 }
 
 a:hover {
-    color: #bcaa96;
+    color: #bed6f6;
     text-decoration: none;
 }
 
 .btn {
-    background:#3c8453;
-    color:#f6f6f6;
+    background:#2c7caf;
+    color:#F5E3CC;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -95,25 +97,35 @@ a:hover {
     border-radius: 4px;
 }
 
+.btn:hover {
+    color: #bed6f6;
+}
+
 .content-wrapper {
     margin: 0 auto;
     padding: 30px;
     max-width: 900px;
 }
 
+.name {
+    color: #2c7caf;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 footer a {
-    color: #bcaa96;
+    color: #e5b678;
 }
 
 footer a:hover {
-    color: #3c8453;
+    color: #2c7caf;
 }
 
 /* HOME
 --------------------------------------------------*/
 
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: url(../images/bg-home-office-bookshelf.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -123,9 +135,18 @@ footer a:hover {
     flex: 1 0 auto;
 }
 
+.home .content-wrapper h1 {
+    color: #2c7caf;
+}
+
+.home .content-wrapper h2 {
+    color: #f8f7f3;
+}
+
 .content-bg {
-    background-color: rgb(255 255 255 / 0.9);
+    background-color: #bed6f6dd;
     padding: 30px;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 650px) {
@@ -141,12 +162,28 @@ footer a:hover {
 
 /* RESUME
 --------------------------------------------------*/
-.resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
+/* .resume header::before */
+.resume header {
+    background: url(../images/bg-home-office-bookshelf.jpg) center;
     background-size: cover;
     content: "";
     display: block;
-    height: 375px;
+    height: 750px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.resume header .content-wrapper {
+    background-color: #bed6f6dd;
+    /* position: absolute;
+    top: 15rem;
+    left: 50%; */
+    border-radius: 15px;
+}
+
+.resume header .content-wrapper h2 {
+    color: #f8f7f3
 }
 
 .resume-section {
@@ -154,7 +191,7 @@ footer a:hover {
 }
 
 .resume-section h2 {
-    border-bottom: 2px dashed #d3d4d6;
+    border-bottom: 2px dashed #f8f7f3;
 }
 
 .download-link {
@@ -270,8 +307,8 @@ footer a:hover {
 --------------------------------------------------*/
 
 footer {
-    background: #222;
-    color: #d3d4d6;
+    background: #bed6f6;
+    color: #2c7caf;
 }
 
 .socials {
